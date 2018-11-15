@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomObjects.cs](./CS/CustomAppointmentImageAndText/CustomObjects.cs) (VB: [CustomObjects.vb](./VB/CustomAppointmentImageAndText/CustomObjects.vb))
+* [Form1.cs](./CS/CustomAppointmentImageAndText/Form1.cs) (VB: [Form1.vb](./VB/CustomAppointmentImageAndText/Form1.vb))
+<!-- default file list end -->
 # How to initialize appointment images and display text using the custom field values
 
 
