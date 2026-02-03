@@ -1,5 +1,7 @@
-﻿Namespace CustomAppointmentImageAndText
-    Partial Public Class Form1
+Namespace CustomAppointmentImageAndText
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,22 +12,22 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim timeRuler1 As New DevExpress.XtraScheduler.TimeRuler()
-            Dim timeRuler2 As New DevExpress.XtraScheduler.TimeRuler()
+            Dim timeRuler1 As DevExpress.XtraScheduler.TimeRuler = New DevExpress.XtraScheduler.TimeRuler()
+            Dim timeRuler2 As DevExpress.XtraScheduler.TimeRuler = New DevExpress.XtraScheduler.TimeRuler()
             Me.layoutControl1 = New DevExpress.XtraLayout.LayoutControl()
             Me.dateNavigator1 = New DevExpress.XtraScheduler.DateNavigator()
             Me.schedulerControl1 = New DevExpress.XtraScheduler.SchedulerControl()
@@ -33,14 +35,14 @@
             Me.layoutControlGroup1 = New DevExpress.XtraLayout.LayoutControlGroup()
             Me.layoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.layoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
-            DirectCast(Me.layoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.layoutControl1.SuspendLayout()
-            DirectCast(Me.dateNavigator1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.schedulerControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.schedulerStorage1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.dateNavigator1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.schedulerControl1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.schedulerStorage1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' layoutControl1
@@ -72,7 +74,7 @@
             Me.schedulerControl1.Name = "schedulerControl1"
             Me.schedulerControl1.OptionsView.ResourceHeaders.RotateCaption = False
             Me.schedulerControl1.Size = New System.Drawing.Size(660, 586)
-            Me.schedulerControl1.Start = New Date(2013, 9, 2, 0, 0, 0, 0)
+            Me.schedulerControl1.Start = New System.DateTime(2013, 9, 2, 0, 0, 0, 0)
             Me.schedulerControl1.Storage = Me.schedulerStorage1
             Me.schedulerControl1.TabIndex = 4
             Me.schedulerControl1.Text = "schedulerControl1"
@@ -94,9 +96,9 @@
             ' layoutControlGroup1
             ' 
             Me.layoutControlGroup1.CustomizationFormText = "layoutControlGroup1"
-            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True
+            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
             Me.layoutControlGroup1.GroupBordersVisible = False
-            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() { Me.layoutControlItem1, Me.layoutControlItem2})
+            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem1, Me.layoutControlItem2})
             Me.layoutControlGroup1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup1.Name = "layoutControlGroup1"
             Me.layoutControlGroup1.Size = New System.Drawing.Size(900, 610)
@@ -130,27 +132,31 @@
             Me.Controls.Add(Me.layoutControl1)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.layoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            CType((Me.layoutControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.layoutControl1.ResumeLayout(False)
-            DirectCast(Me.dateNavigator1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.schedulerControl1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.schedulerStorage1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.dateNavigator1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.schedulerControl1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.schedulerStorage1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+'#End Region
         Private layoutControl1 As DevExpress.XtraLayout.LayoutControl
+
         Private layoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
+
         Private schedulerStorage1 As DevExpress.XtraScheduler.SchedulerStorage
+
         Private dateNavigator1 As DevExpress.XtraScheduler.DateNavigator
+
         Private schedulerControl1 As DevExpress.XtraScheduler.SchedulerControl
+
         Private layoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
     End Class
 End Namespace
-
